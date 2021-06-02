@@ -1,0 +1,26 @@
+---
+AWSTemplateFormationVersion: "2010-09-09"
+
+Description:
+  this template does XXX
+
+Metadata:
+  template Metadata
+
+Parameters:
+  set of Parameters
+
+Mappings:
+  set of Mappings
+
+Conditions:
+  set of Conditions
+
+Transform:
+  set of transforms
+
+Resources:
+  set of Resources
+
+Outputs:
+  set of outputs
