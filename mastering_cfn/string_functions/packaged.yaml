@@ -1,0 +1,18 @@
+Transform: AWS::Serverless-2016-10-31
+Description: Macro StringFunctions
+Resources:
+  StringFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Runtime: nodejs10.x
+      CodeUri: s3://acg-deploy-bucket-acid1234/339c70c34dde55394c089c0108b199f0
+      Handler: index.handler
+  Macro:
+    Type: AWS::CloudFormation::Macro
+    Properties:
+      Name: String
+      Description: String Processing Functions
+      FunctionName:
+        Fn::GetAtt:
+        - StringFunction
+        - Arn
